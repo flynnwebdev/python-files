@@ -22,12 +22,21 @@ import csv
 #     print(f"{row['name']} is {row['age']} years old and {row['height']}cm tall")
 
 menu = [
-  {'item': 'Cappuccino', 'price': 5.50},
+  {'item': 'Cappuccino', 'hello': None, 'price': 5.50},
   {'item': 'English Breakfast Tea', 'price': 5},
   {'item': 'Blueberry Muffin', 'price': 6}
 ]
 
-with open('cafe-menu.csv', 'w') as f:
-  writer = csv.DictWriter(f, menu[0].keys())
-  writer.writeheader()
-  writer.writerows(menu)
+# with open('cafe-menu.csv', 'w') as f:
+#   writer = csv.DictWriter(f, menu[0].keys())
+#   writer.writeheader()
+#   writer.writerows(menu)
+
+import json
+
+# with open('movies.json') as f:
+#   movies = json.load(f)
+#   print(movies[0]['director'])
+
+with open('cafe-menu.json', 'w') as f:
+  json.dump(menu, f, indent=4)

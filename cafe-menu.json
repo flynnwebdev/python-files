@@ -1,0 +1,15 @@
+[
+    {
+        "item": "Cappuccino",
+        "hello": null,
+        "price": 5.5
+    },
+    {
+        "item": "English Breakfast Tea",
+        "price": 5
+    },
+    {
+        "item": "Blueberry Muffin",
+        "price": 6
+    }
+]
